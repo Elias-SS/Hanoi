@@ -1,0 +1,48 @@
+.container {
+    margin-top: 100px;
+    position: relative;
+    width: 300px; /* Largura da aste */
+    height: 300px; /* Altura da aste */
+}
+
+.aste {
+    width: 20px; /* Largura da aste */
+    height: 50%; /* Altura da aste */
+    background-color: #333; /* Cor da aste */
+    position: absolute;
+}
+
+.aste img {
+    position: absolute;
+    bottom: 0; /* Alinha as imagens no fundo da aste */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+}
+
+.aste img:nth-child(1) {
+    bottom: -8px;
+}
+
+.aste img:nth-child(2) {
+    bottom: 5px; /* Segunda imagem está empilhada acima da primeira */
+}
+
+.aste img:nth-child(3) {
+    bottom: 28px; /* Terceira imagem está empilhada acima da segunda */
+}
+
+.aste:nth-child(1) {
+    left: 40%;
+}
+
+.aste:nth-child(2) {
+    left: 80%; /* Posição da segunda aste */
+}
+
+.aste:nth-child(3) {
+    left: 120%; /* Posição da terceira aste */
+}
+
+.aste.hovered {
+    border: 2px dashed red; /* Adiciona uma borda tracejada quando arrastando sobre */
+}
+
